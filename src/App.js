@@ -25,7 +25,10 @@ function App() {
           <Route path="shopping-cart" /> {/* Ruta Carrito de Compras */}
           <Route path="explore" /> {/* Ruta Explorar */}
           <Route path="notifications" /> {/* Ruta Notificaciones */}
-          <Route path="profile" /> {/* Ruta Perfil */}
+          <Route path="user/*" >
+            <Route path="configuration" />
+            <Route path="profile" />
+          </Route>
         </Route>
         
         {/* Ruta Error 404 - Página no encontrada */}

@@ -1,0 +1,48 @@
+.drop-down-user-item{
+    display: flex;
+    position: absolute;
+    top: 3.5rem;
+    left: 58.5%;
+    right: 0;
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    background-color: #FED718;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+    .item-drop-down-user{
+        display: flex;
+        width: auto;
+        text-decoration: none;
+        color: black;
+        font-family: 'Afacad', sans-serif;
+        font-size: 18px;
+        padding: 10px 5px 10px;
+        margin: 5px 0 5px;
+        border: 1.5px solid #FED718;
+        align-items: center;
+    }
+
+        .item-drop-down-user img{
+            display: flex;
+            width: 18px;
+            height: 18px;
+            margin: 0 5px;
+        }
+
+        .item-drop-down-user:hover{
+            border-bottom: 1px solid black;
+            transition: .4s;
+        }
+
+    .item--log-out-drop-down-user{
+        color: #DE2F14;
+    }
+
+    .item--log-out-drop-down-user:hover{
+        border-bottom: 1px solid #DE2F14;
+    }

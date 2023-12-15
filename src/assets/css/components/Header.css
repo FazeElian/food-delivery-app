@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 2rem 0.5rem;
+    position: relative;
 }
 
     .header-mobile{
@@ -46,6 +47,20 @@
 
         .item-nav-menu{
             margin: 0 0.5rem 0;
+            align-items: center;
+        }
+
+        .item-nav-menu-user{
+            display: flex;
+            width: auto;
+            height: 100%;
+        }
+
+        .item-nav-menu-user img{
+            display: flex;
+            width: 15px;
+            height: 15px;
+            margin: 3px 7px 0;
         }
 
         .item-nav-menu:hover,
@@ -228,12 +243,23 @@
     }
 
     .nav-menu-mobile,
-    .nav-user-mobile{
+    .nav-user-mobile,
+    .nav-user--user-mobile{
         display: flex;
         width: 100%;
         height: auto;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .nav-menu-mobile,
+    .nav-user-mobile{
+        align-items: flex-start;
+    }
+
+    .nav-user--user-mobile{
+        justify-content: flex-end;
+        height: 52vh;
     }
     
     .nav-user-mobile .item-notifications-nav-user{
@@ -261,13 +287,18 @@
     }
 
     .item-nav-menu,
-    .nav-user-mobile .item-nav-user{
+    .nav-user-mobile .item-nav-user,
+    .item-nav-user-log-out{
         display: flex;
         align-items: center;
         margin: 0 0 15px;
         border: none;
         padding: 5px 10px 5px;
         border-radius: 7px;
+    }
+
+    .item-nav-user-log-out{
+        color: #DE2F14;
     }
 
     .nav-user-mobile .item-notifications-nav-user{
@@ -298,6 +329,10 @@
     .header-mobile.active{
         min-width: 250px;
     }
+
+    .nav-user--user-mobile{
+        height: 50vh;
+    }
 }
 
 /* Responsive 425px */
@@ -325,5 +360,9 @@
     .header-mobile,
     .header-mobile.active{
         min-width: 240px;
+    }
+
+    .nav-user--user-mobile{
+        height: 35vh;
     }
 }
