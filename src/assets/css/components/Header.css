@@ -199,24 +199,22 @@
 
     .header-mobile{
         display: flex;
+        position: absolute;
+        top: 3.5rem;
         width: 25%;
-        height: 0vh;
-        overflow: hidden;
-        opacity: 0;
+        max-width: 30%;
+        height: -webkit-fill-available;
+        overflow: auto;
         transition: .3s;
         flex-direction: column;
-    }
-
-    .header-mobile,
-    .header-mobile.active{
-        display: flex;
-        width: auto;
-        max-width: 30%;
-        overflow: hidden;
-        transition: .3s linear;
-        flex-direction: column;
+        transform: translateX(-100%);
+        left: 0;
         background-color: #FED718;
         padding: 2rem 1rem 2rem;
+    }
+
+    .header-mobile.active{ 
+        transform: translate(0) !important;
     }
 
     .header-mobile{
