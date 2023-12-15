@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import "../assets/css/components/Header-UserDropDown.css";
 
 // Imágenes - iconos
+    // Icono Notificaciones
+    import NotificationsIcon from "../assets/img/icons/header-notifications.png";
+        
     // Icono Usuario
     import UserIcon from "../assets/img/icons/header-mobile-user.png";
 
@@ -14,9 +17,14 @@ import "../assets/css/components/Header-UserDropDown.css";
     // Icono Cerrar Sesión
     import LogOutIcon from "../assets/img/icons/header-user-dropdown-log-out.png";
 
+
 const HeaderUserDropDown = () => {
     return(
         <div className="drop-down-user-item">
+            <Link to="notifications" className="item-drop-down-user"> 
+                <img src={NotificationsIcon} alt="" />
+                Notificaciones
+            </Link>
             <Link to="profile" className="item-drop-down-user"> 
                 <img src={UserIcon} alt="" />
                 Mi Perfil

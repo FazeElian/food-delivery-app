@@ -79,33 +79,33 @@ const Header = () => {
                     <Link to="products" className="item-nav-menu">Nuestros Productos</Link>
                     <Link to="products/categories" className="item-nav-menu">Categorías</Link>
                     <Link to="explore" className="item-nav-menu">Explorar</Link>
-                    <Link 
-                        to="profile" 
-                        className="item-nav-menu item-nav-menu-user"
-                        onMouseEnter={showUserDropDown} // Al estar el hover activo va a mostrar el contenido dropdown
-                        onMouseLeave={hideUserDropDown} // Al estar el hover inactivo no va a mostrar el contenido dropsdown 
-                    >
-                        Usuario
-                        <img src={UserDropDownIcon} alt="" />
-                        {userDropdown && <HeaderUserDropDown />}
-                    </Link>
                 </div>
                 <div className="nav-user">
                     <Link to="my-favorites" className="item-nav-user item-nav-user-favorites">
                         <h2>Mis Favoritos</h2>
                         <img src={FavoritesIcon} alt="" />
                     </Link>
-                    <Link to="notifications" className="item-notifications-nav-user">
-                        <img src={NotificationsIcon} alt="" />
-                    </Link>
                     <Link to="shopping-cart" className="item-nav-user item-nav-user-cart">
                         <h2>Carrito</h2>
                         <img src={ShoppingCartIcon} alt="" />
                     </Link>
+                    <Link 
+                        to="profile" 
+                        className="item-nav-user item-nav-user-cart item-nav-user--user"
+                        onMouseEnter={showUserDropDown} // Al estar el hover activo va a mostrar el contenido dropdown
+                        onMouseLeave={hideUserDropDown} // Al estar el hover inactivo no va a mostrar el contenido dropsdown 
+                    >
+                        <img src={UserIcon} alt="" />
+                        <div className="btn-drop-down-user">
+                            <img src={UserDropDownIcon} alt="" />
+                        </div>
+                        {userDropdown && <HeaderUserDropDown />}
+                    </Link>
+
                     <button 
                         className="btn-nav-menu item-nav-user-btn" 
                         onClick={toggleMenu}
-                        onMouseOutCapture={toggleMenu}
+                        onMouseOut={toggleMenu}
                     >
                         <h2>Menú</h2>
                         <img src={MenuIcon} alt="" />
@@ -122,10 +122,6 @@ const Header = () => {
                     <Link to="explore" className="item-nav-menu"><img src={ExploreIcon} alt="Explore Icon" /> Explorar</Link>
                 </nav>
                 <nav className="nav-user-mobile">
-                    <Link to="notifications" className="item-notifications-nav-user">
-                        <h2>Notificaciones</h2>
-                        <img src={NotificationsIcon} alt="" />
-                    </Link>
                     <Link to="shopping-cart" className="item-nav-menu item-nav-user-cart">
                         <h2>Carrito de Compras</h2>
                         <img src={ShoppingCartIcon} alt="" />
@@ -137,6 +133,10 @@ const Header = () => {
                 </nav>
 
                 <nav className="nav-user--user-mobile">
+                    <Link to="notifications" className="item-nav-menu item-nav-user-favorites">
+                        <h2>Notificaciones</h2>
+                        <img src={NotificationsIcon} alt="" />
+                    </Link>
                     <Link to="profile" className="item-nav-menu item-nav-user-favorites">
                         <h2>Mi Perfil</h2>
                         <img src={UserIcon} alt="Profile Icon" />
@@ -152,8 +152,6 @@ const Header = () => {
                 </nav>
             </header>
 
-            {/* Mostrar componente de dropdown para Perfil */}
-            {/* {userDropdown && <HeaderUserDropDown />} */}
         </>
     )
 }

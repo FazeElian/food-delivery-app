@@ -113,6 +113,32 @@
             border-bottom: 1.5px solid red;
         }
 
+        .item-nav-user--user{
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+
+            .btn-drop-down-user{
+                display: flex;;
+                width: auto;
+                height: auto;
+                align-items: center;
+                border: 0;
+                background: transparent;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                margin-left: -5px;
+            }
+
+            .btn-drop-down-user img{
+                display: flex;
+                max-width: 17px;
+                max-height: 17px;
+            }
+
         .item-nav-user img{
             display: flex;
             width: 25px;
@@ -363,6 +389,6 @@
     }
 
     .nav-user--user-mobile{
-        height: 35vh;
+        height: 45vh;
     }
 }
