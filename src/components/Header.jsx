@@ -102,7 +102,11 @@ const Header = () => {
                         <h2>Carrito</h2>
                         <img src={ShoppingCartIcon} alt="" />
                     </Link>
-                    <button className="btn-nav-menu item-nav-user-btn" onClick={toggleMenu}>
+                    <button 
+                        className="btn-nav-menu item-nav-user-btn" 
+                        onClick={toggleMenu}
+                        onMouseOutCapture={toggleMenu}
+                    >
                         <h2>Menú</h2>
                         <img src={MenuIcon} alt="" />
                     </button>
