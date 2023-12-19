@@ -105,7 +105,6 @@ const Header = () => {
                     <button 
                         className="btn-nav-menu item-nav-user-btn" 
                         onClick={toggleMenu}
-                        onMouseOut={toggleMenu}
                     >
                         <h2>Menú</h2>
                         <img src={MenuIcon} alt="" />
@@ -151,7 +150,6 @@ const Header = () => {
                     </Link>
                 </nav>
             </header>
-
         </>
     )
 }
