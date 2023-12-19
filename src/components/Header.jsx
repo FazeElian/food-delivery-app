@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import { useState } from "react";
 
 // Estilos para este componente
@@ -150,6 +150,9 @@ const Header = () => {
                     </Link>
                 </nav>
             </header>
+
+            {/* Para renderización de rutas secundarias */}
+            <Outlet />
         </>
     )
 }
