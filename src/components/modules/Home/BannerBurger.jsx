@@ -54,7 +54,7 @@ const BannerBurger = () => {
                         <h2>Hamburguesa Express</h2>
                         <div className="content-burger-price">
                             <h3>Sólo por </h3>
-                            <h1>4.500 $</h1>
+                            <h1>$ 4.500</h1>
                         </div>
                     </div>
                 </div>
@@ -65,11 +65,11 @@ const BannerBurger = () => {
                             <div className="cont-elements-include">
                                 <div className="cont-element-include">
                                     <img src={CocaColaImage} alt="" />
-                                    <p>Coca Cola en lata 200 ml</p>
+                                    <p>Coca Cola en lata 330 ml</p>
                                 </div>
                                 <div className="cont-element-include cont-include-paragraph-btm">
                                     <img src={FrenchFriesImage} alt="" />
-                                    <p>Papas fritas 40 g</p>
+                                    <p>Papas fritas 115 g</p>
                                 </div>
                             </div>
                         </div>
