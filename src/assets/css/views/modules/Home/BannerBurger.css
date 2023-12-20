@@ -272,7 +272,7 @@
 
     .cont-info-burger{
         width: 100%;
-        margin: -7rem 0 3rem;
+        margin: -6rem 0 3rem;
     }
 
     .cont-info-burger,
@@ -312,10 +312,6 @@
 
 /* Responsive 425px */
 @media (max-width: 425px){
-    .container-burger-model--info{
-        margin: -1.5rem 0 0;
-    }
-
     .cont-burger{
         display: flex;
         margin: 0;

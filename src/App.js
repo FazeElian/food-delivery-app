@@ -17,8 +17,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Header />} > {/* Ruta Página Principal */}
-          <Route path="/" index element={<HomeView />} />
+        <Route path="/" element={<Header />} > 
+          <Route path="/" index element={<HomeView />} /> {/* Ruta Página Principal */}
           <Route path="products/*" /> {/* Ruta Productos */}
           <Route path="products/categories" /> {/* Ruta Categorías de Productos */}
           <Route path="my-favorites" /> {/* Ruta Mis Favoritos */}
