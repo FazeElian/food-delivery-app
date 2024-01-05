@@ -1,16 +1,10 @@
-// Componentes de vista
-    // Encabezado de App
-    import { Header } from "../components/Header";
-            
+// Componentes de vista            
     // Banner Hamburguesa
     import { BannerBurger } from "../components/modules/Home/BannerBurger";
 
 const HomeView = () => {
     return(
-        <>
-            {/* Componente: Encabezado de App */}
-            <Header />
-            
+        <>            
             {/* Componente: Banner de Hamburguesa */}
             <BannerBurger />
         </>

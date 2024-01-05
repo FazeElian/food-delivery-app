@@ -21,19 +21,19 @@ import "../assets/css/components/Header-UserDropDown.css";
 const HeaderUserDropDown = () => {
     return(
         <div className="drop-down-user-item">
-            <Link to="notifications" className="item-drop-down-user"> 
+            <Link to="/notifications" className="item-drop-down-user"> 
                 <img src={NotificationsIcon} alt="" />
                 Notificaciones
             </Link>
-            <Link to="profile" className="item-drop-down-user"> 
+            <Link to="/user/profile" className="item-drop-down-user"> 
                 <img src={UserIcon} alt="" />
                 Mi Perfil
             </Link>
-            <Link to="configuration" className="item-drop-down-user"> 
+            <Link to="/user/configuration" className="item-drop-down-user"> 
                 <img src={ConfigIcon} alt="" />
                 Configuración
             </Link>
-            <Link to="logout" className="item-drop-down-user item--log-out-drop-down-user">
+            <Link to="/" className="item-drop-down-user item--log-out-drop-down-user">
                 <img src={LogOutIcon} alt="" /> 
                 Cerrar Sesión
             </Link>

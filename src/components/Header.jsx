@@ -76,21 +76,21 @@ const Header = () => {
                 </nav>
                 <div className="nav-menu">
                     <Link to="/" className="item-nav-menu">Inicio</Link>
-                    <Link to="products" className="item-nav-menu">Nuestros Productos</Link>
-                    <Link to="products/categories" className="item-nav-menu">Categorías</Link>
-                    <Link to="explore" className="item-nav-menu">Explorar</Link>
+                    <Link to="/products" className="item-nav-menu">Nuestros Productos</Link>
+                    <Link to="/products/categories" className="item-nav-menu">Categorías</Link>
+                    <Link to="/explore" className="item-nav-menu">Explorar</Link>
                 </div>
                 <div className="nav-user">
-                    <Link to="my-favorites" className="item-nav-user item-nav-user-favorites">
+                    <Link to="/my-favorites" className="item-nav-user item-nav-user-favorites">
                         <h2>Mis Favoritos</h2>
                         <img src={FavoritesIcon} alt="" />
                     </Link>
-                    <Link to="shopping-cart" className="item-nav-user item-nav-user-cart">
+                    <Link to="/shopping-cart" className="item-nav-user item-nav-user-cart">
                         <h2>Carrito</h2>
                         <img src={ShoppingCartIcon} alt="" />
                     </Link>
                     <Link 
-                        to="profile" 
+                        to="/user/profile" 
                         className="item-nav-user item-nav-user-cart item-nav-user--user"
                         onMouseEnter={showUserDropDown} // Al estar el hover activo va a mostrar el contenido dropdown
                         onMouseLeave={hideUserDropDown} // Al estar el hover inactivo no va a mostrar el contenido dropsdown 
@@ -116,35 +116,35 @@ const Header = () => {
             <header className={ `header-mobile ${menu ? "active" : ""}` }>
                 <nav className="nav-menu-mobile">
                     <Link to="/" className="item-nav-menu"><img src={HomeIcon} alt="Home Icon" /> Inicio</Link>
-                    <Link to="products" className="item-nav-menu"><img src={ProductsIcon} alt="Products Icon" /> Nuestros Productos</Link>
-                    <Link to="products/categories" className="item-nav-menu"><img src={CategoriesIcon} alt="Categories Icon" /> Categorías</Link>
-                    <Link to="explore" className="item-nav-menu"><img src={ExploreIcon} alt="Explore Icon" /> Explorar</Link>
+                    <Link to="/products" className="item-nav-menu"><img src={ProductsIcon} alt="Products Icon" /> Nuestros Productos</Link>
+                    <Link to="/products/categories" className="item-nav-menu"><img src={CategoriesIcon} alt="Categories Icon" /> Categorías</Link>
+                    <Link to="/explore" className="item-nav-menu"><img src={ExploreIcon} alt="Explore Icon" /> Explorar</Link>
                 </nav>
                 <nav className="nav-user-mobile">
-                    <Link to="shopping-cart" className="item-nav-menu item-nav-user-cart">
+                    <Link to="/shopping-cart" className="item-nav-menu item-nav-user-cart">
                         <h2>Carrito de Compras</h2>
                         <img src={ShoppingCartIcon} alt="" />
                     </Link>
-                    <Link to="my-favorites" className="item-nav-menu item-nav-user-favorites">
+                    <Link to="/my-favorites" className="item-nav-menu item-nav-user-favorites">
                         <h2>Mis Favoritos</h2>
                         <img src={FavoritesIcon} alt="" />
                     </Link>
                 </nav>
 
                 <nav className="nav-user--user-mobile">
-                    <Link to="notifications" className="item-nav-menu item-nav-user-favorites">
+                    <Link to="/notifications" className="item-nav-menu item-nav-user-favorites">
                         <h2>Notificaciones</h2>
                         <img src={NotificationsIcon} alt="" />
                     </Link>
-                    <Link to="profile" className="item-nav-menu item-nav-user-favorites">
+                    <Link to="/user/profile" className="item-nav-menu item-nav-user-favorites">
                         <h2>Mi Perfil</h2>
                         <img src={UserIcon} alt="Profile Icon" />
                     </Link>
-                    <Link to="configuration" className="item-nav-menu item-nav-user-favorites">
+                    <Link to="/configuration" className="item-nav-menu item-nav-user-favorites">
                         <h2>Configuración</h2>
                         <img src={ConfigIcon} alt="" />
                     </Link>
-                    <Link to="shopping-cart" className="item-nav-menu item-nav-user-favorites item-nav-user-log-out">
+                    <Link to="/shopping-cart" className="item-nav-menu item-nav-user-favorites item-nav-user-log-out">
                         <h2>Cerrar Sesión</h2>
                         <img src={LogOutIcon} alt="" />
                     </Link>
