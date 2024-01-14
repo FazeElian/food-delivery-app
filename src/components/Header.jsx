@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Estilos para este componente
 import "../assets/css/components/Header.css";
@@ -65,6 +65,22 @@ const Header = () => {
     const hideUserDropDown = () => {
         setUserDropdown(false)
     }
+
+    // Hook para desactivar menú cuando el usuario haga cierta cantidad de scroll
+    useEffect(() => {
+        const handleScrollMenu = () => {
+            const scrollThreshold = 200; // Cantidad de Scroll
+            if (window.scrollY > scrollThreshold && menu) {
+                setMenu(false);
+            }
+        };
+    
+        window.addEventListener('scroll', handleScrollMenu); // Adición Evento de Scroll
+    
+        return () => {
+            window.removeEventListener('scroll', handleScrollMenu);
+        };
+    }, [menu]);    
 
     return(
         <>
