@@ -4,6 +4,9 @@ import "../../../assets/css/views/modules/Home/FeaturedProducts.css";
 // Componente Item de Producto Destacado
 import { FeaturedProductItem } from "./FeaturedProductItem";
 
+// Links con Scroll
+import { Element } from "react-scroll";
+
 // Imágenes - Iconos
     // Producto destacado 1
     import FeaturedProductImage1 from "../../../assets/img/modules/Home/featuredProducts/featuredProduct1.jpg";
@@ -19,7 +22,7 @@ import { FeaturedProductItem } from "./FeaturedProductItem";
 
 const FeaturedProducts = () => {
     return(
-        <div className="cont-featured-prods">
+        <Element className="cont-featured-prods" name="featured-products-section">
             <div className="title-featured-prods">
                 <h2>Productos más destacados</h2>
             </div>
@@ -53,7 +56,7 @@ const FeaturedProducts = () => {
                     link = "products/burguer-big-flame"
                 />
             </div>
-        </div>
+        </Element>
     )
 }
 
