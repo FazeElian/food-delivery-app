@@ -11,4 +11,4 @@ const ProductsView = () => {
     )
 }
 
-export { ProductsView };
+export default ProductsView;

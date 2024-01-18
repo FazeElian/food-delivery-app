@@ -11,4 +11,4 @@ const CategoriesView = () => {
     )
 }
 
-export { CategoriesView };
+export default CategoriesView;

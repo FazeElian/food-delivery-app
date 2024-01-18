@@ -11,4 +11,4 @@ const ConfigurationView = () => {
     )
 }
 
-export { ConfigurationView };
+export default ConfigurationView;

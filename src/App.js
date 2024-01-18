@@ -1,57 +1,144 @@
-import React from "react";
+import React, { Suspense } from "react";
+
+import { lazy } from "react";
 
 // Rutas
 import { Routes, Route } from "react-router-dom";
+
+// Estilos generales
+import "./assets/css/general-styles.css";
 
 // Componentes de vistas
   // Encabezado de página
   import { Header } from "./components/Header";
 
-  // Página Principal 
-  import { HomeView } from "./views/HomeView";
+  // Cargando...
+  import { Loading } from "./components/Loading.jsx";
 
+  // Página Principal 
+  const HomeView = lazy(() => import("./views/HomeView"));
+  
   // Productos
-  import { ProductsView } from "./views/modules/Products/ProductsView.jsx";
+  const ProductsView = lazy(() => import("./views/modules/Products/ProductsView.jsx"));
 
   // Categorías de Productos
-  import { CategoriesView } from "./views/modules/Categories/CategoriesView.jsx";
+  const CategoriesView = lazy(() => import("./views/modules/Categories/CategoriesView.jsx"));
 
   // Explorar
-  import { ExploreView } from "./views/modules/Explore/ExploreView.jsx";
+  const ExploreView = lazy(() => import("./views/modules/Explore/ExploreView.jsx"));
 
   // Mis Favoritos
-  import { MyFavoritesView } from "./views/modules/User/MyFavorites/MyFavoritesView.jsx";
+  const MyFavoritesView = lazy(() => import("./views/modules/User/MyFavorites/MyFavoritesView.jsx"));
 
   // Carrito de Compras
-  import { ShoppingCartView } from "./views/modules/User/ShoppingCart/ShoppingCartView.jsx";
+  const ShoppingCartView = lazy(() => import("./views/modules/User/ShoppingCart/ShoppingCartView.jsx"));
 
   // Notificaciones
-  import { NotificationsView } from "./views/modules/Notifications/NotificationsView.jsx";
+  const NotificationsView = lazy(() => import("./views/modules/Notifications/NotificationsView.jsx"));
 
   // Configuración
-  import { ConfigurationView } from "./views/modules/User/Configuration/ConfigurationView.jsx";
+  const ConfigurationView = lazy(() => import("./views/modules/User/Configuration/ConfigurationView.jsx"));
 
   // Perfil
-  import { ProfileView } from "./views/modules/User/Profile/ProfileView.jsx";
-
-// Estilos generales
-import "./assets/css/general-styles.css";
+  const ProfileView = lazy(() => import("./views/modules/User/Profile/ProfileView.jsx"));
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" Component={Header}> 
-          <Route path="/" index Component={HomeView} /> {/* Ruta Página Principal */}
-          <Route path="/products/*" Component={ProductsView} /> {/* Ruta Productos */}
-          <Route path="/products/categories" Component={CategoriesView}  /> {/* Ruta Categorías de Productos */}
-          <Route path="my-favorites" Component={MyFavoritesView} /> {/* Ruta Mis Favoritos */}
-          <Route path="shopping-cart" Component={ShoppingCartView} /> {/* Ruta Carrito de Compras */}
-          <Route path="/explore" Component={ExploreView} /> {/* Ruta Explorar */}
-          <Route path="/notifications" Component={NotificationsView} /> {/* Ruta Notificaciones */}
+        <Route path="/" element={<Header />}> 
+          {/* Ruta Página Principal */}
+          <Route 
+            path="/" 
+            index 
+            element={
+              <Suspense fallback={<Loading />}>
+                <HomeView />
+              </Suspense>
+            } 
+          /> 
+
+          {/* Ruta Productos */}
+          <Route 
+            path="/products/*" 
+            element={
+              <Suspense fallback={<Loading />}>
+                <ProductsView />
+              </Suspense>
+            } 
+          /> 
+
+          {/* Ruta Categorías de Productos */}
+          <Route 
+            path="/products/categories" 
+            element={
+              <Suspense fallback={<Loading />}>
+                <CategoriesView />
+              </Suspense>
+            }
+          /> 
+
+          {/* Ruta Mis Favoritos */}
+          <Route 
+            path="/my-favorites" 
+            element={
+              <Suspense fallback={<Loading />}>
+                <MyFavoritesView />
+              </Suspense>
+            } 
+          /> 
+
+          {/* Ruta Carrito de Compras */}
+          <Route 
+            path="/shopping-cart" 
+            element={
+              <Suspense fallback={<Loading />}>
+                <ShoppingCartView />
+              </Suspense>
+            } 
+          /> 
+
+          {/* Ruta Explorar */}
+          <Route 
+            path="/explore" 
+            element={
+              <Suspense fallback={<Loading />}>
+                <ExploreView />
+              </Suspense>
+            } 
+          />
+
+          {/* Ruta Notificaciones */}
+          <Route 
+            path="/notifications" 
+            element={
+              <Suspense>
+                <NotificationsView />
+              </Suspense>
+            } 
+          />
+          
+          {/* Rutas para Usuario */}
           <Route path="/user" >
-            <Route path="configuration" Component={ConfigurationView} />
-            <Route path="profile" Component={ProfileView} />
+            {/* Ruta Configuración */}
+            <Route 
+              path="configuration"
+              element={
+                <Suspense fallback={<Loading />}>
+                  <ConfigurationView />
+                </Suspense>
+              } 
+            />
+
+            {/* Ruta Perfil */}
+            <Route 
+              path="profile" 
+              element={
+                <Suspense fallback={<Loading />}>
+                  <ProfileView />
+                </Suspense>
+              } 
+            />
           </Route>
         </Route>
         

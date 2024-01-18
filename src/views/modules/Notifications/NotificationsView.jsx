@@ -11,4 +11,4 @@ const NotificationsView = () => {
     )
 }
 
-export { NotificationsView };
+export default NotificationsView;

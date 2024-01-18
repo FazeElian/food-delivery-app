@@ -11,4 +11,4 @@ const ShoppingCartView = () => {
     )
 }
 
-export { ShoppingCartView };
+export default ShoppingCartView;

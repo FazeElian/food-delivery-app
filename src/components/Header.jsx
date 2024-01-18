@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 
 // Estilos para este componente
 import "../assets/css/components/Header.css";
@@ -156,7 +156,7 @@ const Header = () => {
                         <h2>Mi Perfil</h2>
                         <img src={UserIcon} alt="Profile Icon" />
                     </Link>
-                    <Link to="/configuration" className="item-nav-menu item-nav-user-favorites">
+                    <Link to="/user/configuration" className="item-nav-menu item-nav-user-favorites">
                         <h2>Configuración</h2>
                         <img src={ConfigIcon} alt="" />
                     </Link>
@@ -167,8 +167,10 @@ const Header = () => {
                 </nav>
             </header>
 
-            {/* Para renderización de rutas secundarias */}
-            <Outlet />
+            <Suspense fallback={<h1>Cargando...</h1>}>
+                {/* Para renderización de rutas secundarias */}
+                <Outlet />
+            </Suspense>
         </>
     )
 }

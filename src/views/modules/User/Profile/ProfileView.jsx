@@ -11,4 +11,4 @@ const ProfileView = () => {
     )
 }
 
-export { ProfileView };
+export default ProfileView;

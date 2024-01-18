@@ -11,4 +11,4 @@ const ExploreView = () => {
     )
 }
 
-export { ExploreView };
+export default ExploreView;
