@@ -14,6 +14,7 @@ const FeaturedProductItem = (props) => {
                     <h2>{props.name} </h2>
                 </Link>
                 <p><b>Incluye: </b>{props.description} </p>
+                <h3><b>$ </b>{props.price}</h3>
             </div>
         </div>
     )

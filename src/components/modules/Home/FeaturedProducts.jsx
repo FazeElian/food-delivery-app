@@ -31,8 +31,9 @@ const FeaturedProducts = () => {
                     imgSrc = { FeaturedProductImage1 }
                     imgAlt = "Hamburguesa Express" 
                     name = "Hamburguesa Express"
-                    description = "Extra queso, carne de res, lechuga, pepino tajado, tocineta, papas fritas y salsa de tomate"
+                    description = "Extra queso, carne de res, lechuga, pepino tajado, papas fritas y salsa de tomate"
                     link = "products/burguer-express"
+                    price = "4.500"
                 />
                 <FeaturedProductItem
                     imgSrc = { FeaturedProductImage2 }
@@ -40,6 +41,7 @@ const FeaturedProducts = () => {
                     name = "Hamburguesa QuickBite"
                     description = "Queso, pepino y tomate tajado, carne de res y lechuga doble"
                     link = "products/burguer-quickbite"
+                    price = "5.600"
                 />
                 <FeaturedProductItem
                     imgSrc = { FeaturedProductImage3 }
@@ -47,6 +49,7 @@ const FeaturedProducts = () => {
                     name = "Hamburguesa Big Flavor"
                     description = "Queso, pepino y tomate tajado, lechuga doble, carne de res y aros de cebolla"
                     link = "products/burguer-big-flavor"
+                    price = "6.500"
                 />
                 <FeaturedProductItem
                     imgSrc = { FeaturedProductImage4 }
@@ -54,6 +57,7 @@ const FeaturedProducts = () => {
                     name = "Hamburguesa Big Flame"
                     description = "Doble queso, carne de res, pepino y tomate tajado, tocineta doble y lechuga doble"
                     link = "products/burguer-big-flame"
+                    price = "8.000"
                 />
             </div>
         </Element>
