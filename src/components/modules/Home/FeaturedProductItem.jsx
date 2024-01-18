@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 const FeaturedProductItem = (props) => {
     return(
-        <div className="featured-prod">
-            <div className="img-featured-prod">
+        <div className="cont-prod">
+            <div className="img-prod">
                 <Link to={props.link}>
                     <img src={props.imgSrc} alt={props.imgAlt} />
                 </Link>
             </div>
-            <div className="info-featured-prod">
+            <div className="info-cont-prod">
                 <Link to={props.link}>
                     <h2>{props.name} </h2>
                 </Link>

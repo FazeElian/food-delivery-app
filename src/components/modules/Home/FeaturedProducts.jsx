@@ -1,5 +1,5 @@
 // Estilos para este componente
-import "../../../assets/css/views/modules/Home/FeaturedProducts.css";
+import "../../../assets/css/views/modules/Home/ProductsList.css";
 
 // Componente Item de Producto Destacado
 import { FeaturedProductItem } from "./FeaturedProductItem";
@@ -22,11 +22,11 @@ import { Element } from "react-scroll";
 
 const FeaturedProducts = () => {
     return(
-        <Element className="cont-featured-prods" name="featured-products-section">
-            <div className="title-featured-prods">
+        <Element className="cont-prods" name="featured-products-section">
+            <div className="title-cont-prods">
                 <h2>Productos más destacados</h2>
             </div>
-            <div className="list-featured-prods">
+            <div className="list-prods">
                 <FeaturedProductItem
                     imgSrc = { FeaturedProductImage1 }
                     imgAlt = "Hamburguesa Express" 
