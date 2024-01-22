@@ -11,7 +11,14 @@
     // Ofertas del día
     import { DailyOffers } from "../components/modules/Home/DailyOffersProducts";
 
+// Hooks
+    // Título de Vista
+    import { useDocumentTitle } from "../hooks/useDocumentTitle";
+
 const HomeView = () => {
+    // Título de vista usando el método del Custom Hook useDocumentTitle()
+    useDocumentTitle("Inicio");
+
     return(
         <>            
             {/* Componente: Banner de Hamburguesa */}
