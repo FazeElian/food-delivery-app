@@ -10,10 +10,14 @@
 
     // Ofertas del día
     import { DailyOffers } from "../components/modules/Home/DailyOffersProducts";
+        
+    // Banner Black Friday
+    import { BannerOrderNow } from "../components/modules/Home/BannerOrderNow";
 
 // Hooks
     // Título de Vista
     import { useDocumentTitle } from "../hooks/useDocumentTitle";
+
 
 const HomeView = () => {
     // Título de vista usando el método del Custom Hook useDocumentTitle()
@@ -32,6 +36,9 @@ const HomeView = () => {
 
             {/* Componente: Ofertas del día */}
             <DailyOffers />
+
+            {/* Componente: BannerOrderNow */}
+            <BannerOrderNow />
         </>
     )
 }
