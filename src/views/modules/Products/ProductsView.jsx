@@ -5,15 +5,21 @@ import "../../../assets/css/views/modules/Products/ProductsView.css";
     // Título de Vista
     import { useDocumentTitle } from "../../../hooks/useDocumentTitle";
 
+// Componentes para esta vista
+    // Búsqueda
+    import { Search } from "../../../components/Search";
+
 const ProductsView = () => {
     // Título de vista usando el método del Custom Hook useDocumentTitle()
     useDocumentTitle("Nuestros Productos");
 
     return(
         <>
-            <div>
-                <h1>Vista: Productos</h1>
-            </div>
+            <section className="content-page">
+                <div className="cont-content-page">
+                    <Search />
+                </div>
+            </section>
         </>
     )
 }

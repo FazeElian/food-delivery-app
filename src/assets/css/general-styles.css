@@ -3,3 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.content-page{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #0D0D0D;
+    justify-content: center;
+}
+
+    .content-page .cont-content-page{
+        display: flex;
+        width: 80.5%;
+        height: auto;
+    }
