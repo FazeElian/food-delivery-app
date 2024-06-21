@@ -36,12 +36,6 @@
             cursor: pointer;
         }
 
-        .hola{
-            display: flex;
-            height: 40px;
-            padding: 1rem;
-        }
-
     .cont-search-bar-search{
         display: flex;
         width: 30%;

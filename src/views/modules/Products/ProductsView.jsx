@@ -9,6 +9,9 @@ import "../../../assets/css/views/modules/Products/ProductsView.css";
     // Búsqueda
     import { Search } from "../../../components/Search";
 
+    // Galería de Productos
+    import { ProductsGallery } from "../../../components/modules/Products/ProductsGallery";
+
 const ProductsView = () => {
     // Título de vista usando el método del Custom Hook useDocumentTitle()
     useDocumentTitle("Nuestros Productos");
@@ -17,7 +20,11 @@ const ProductsView = () => {
         <>
             <section className="content-page">
                 <div className="cont-content-page">
+                    {/* Componente de Búsqueda */}
                     <Search />
+                    
+                    {/* Componente de Galería de Productos */}
+                    <ProductsGallery />
                 </div>
             </section>
         </>

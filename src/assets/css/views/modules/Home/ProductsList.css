@@ -31,6 +31,7 @@
             background: #ffffff;
             background: linear-gradient(to right, #FFFFFF 15%, #FED718 55%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             border-bottom: 1px solid #FED718;
             animation: changeColor 2s infinite;
