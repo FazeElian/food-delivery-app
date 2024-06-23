@@ -1,16 +1,16 @@
 // Products Images
-import Express from "../../../assets/img/modules/Products/hamburguesa-express.jpg";
-import QuickBite from "../../../assets/img/modules/Products/hamburguesa-quickbite.jpg";
-import BigFlavor from "../../../assets/img/modules/Products/hamburguesa-big-flavor.jpg";
-import BigFlame from "../../../assets/img/modules/Products/hamburguesa-big-flame.jpg";
-import ZoomBite from "../../../assets/img/modules/Products/hamburguesa-zoombite.jpeg";
-import FlashFeast from "../../../assets/img/modules/Products/hamburguesa-flashfeast.jpeg";
-import RushRapture from "../../../assets/img/modules/Products/hamburguesa-rushrapture.jpeg";
-import DoubleDecker from "../../../assets/img/modules/Products/hamburguesa-double-decker.jpg";
-import VeggieDelight from "../../../assets/img/modules/Products/hamburguesa-veggie-delight.jpg";
-import ClassicCheese from "../../../assets/img/modules/Products/hamburguesa-classic-cheese.jpg";
-import GourmetCheese from "../../../assets/img/modules/Products/hamburguesa-gourmet-cheese.jpg";
-import Truffle from "../../../assets/img/modules/Products/hamburguesa-truffle.jpg";
+import Express from "../../../assets/img/modules/Products/webp/hamburguesa-express.webp";
+import QuickBite from "../../../assets/img/modules/Products/webp/hamburguesa-quickbite.webp";
+import BigFlavor from "../../../assets/img/modules/Products/webp/hamburguesa-big-flavor.webp";
+import BigFlame from "../../../assets/img/modules/Products/webp/hamburguesa-big-flame.webp";
+import ZoomBite from "../../../assets/img/modules/Products/webp/hamburguesa-zoombite.webp";
+import FlashFeast from "../../../assets/img/modules/Products/webp/hamburguesa-flashfeast.webp";
+import RushRapture from "../../../assets/img/modules/Products/webp/hamburguesa-rushrapture.webp";
+import DoubleDecker from "../../../assets/img/modules/Products/webp/hamburguesa-double-decker.webp";
+import VeggieDelight from "../../../assets/img/modules/Products/webp/hamburguesa-veggie-delight.webp";
+import ClassicCheese from "../../../assets/img/modules/Products/webp/hamburguesa-classic-cheese.webp";
+import GourmetCheese from "../../../assets/img/modules/Products/webp/hamburguesa-gourmet-cheese.webp";
+import Truffle from "../../../assets/img/modules/Products/webp/hamburguesa-truffle.webp";
 
 const ProductsList = [
     {

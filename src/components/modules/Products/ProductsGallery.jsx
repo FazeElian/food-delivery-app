@@ -14,7 +14,7 @@ const ProductsGallery = () => {
                 <div className="cont-prod--gallery" key={product.id}>
                     <div className="img-prod--gallery">
                         <Link to={`/products/${product.slug}`}>
-                            <img src={product.imgSrc} alt={product.name} />
+                            <img src={product.imgSrc} alt={product.name} loading="lazy" />
                         </Link>
                     </div>
                     <div className="info-cont-prod--gallery">
