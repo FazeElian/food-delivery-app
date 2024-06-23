@@ -9,16 +9,16 @@ import { Element } from "react-scroll";
 
 // Imágenes - Iconos
     // Producto destacado 1
-    import FeaturedProductImage1 from "../../../assets/img/modules/Home/featuredProducts/featuredProduct1.jpg";
+    import FeaturedProductImage1 from "../../../assets/img/modules/Home/featuredProducts/webp/featuredProduct1.webp";
 
     // Producto destacado 2
-    import FeaturedProductImage2 from "../../../assets/img/modules/Home/featuredProducts/featuredProduct2.jpg";
+    import FeaturedProductImage2 from "../../../assets/img/modules/Home/featuredProducts/webp/featuredProduct2.webp";
 
     // Producto destacado 3
-    import FeaturedProductImage3 from "../../../assets/img/modules/Home/featuredProducts/featuredProduct3.jpg";
+    import FeaturedProductImage3 from "../../../assets/img/modules/Home/featuredProducts/webp/featuredProduct3.webp";
 
     // Producto destacado 4
-    import FeaturedProductImage4 from "../../../assets/img/modules/Home/featuredProducts/featuredProduct4.jpg";
+    import FeaturedProductImage4 from "../../../assets/img/modules/Home/featuredProducts/webp/featuredProduct4.webp";
 
 const FeaturedProducts = () => {
     return(
@@ -32,7 +32,7 @@ const FeaturedProducts = () => {
                     imgAlt = "Hamburguesa Express" 
                     name = "Hamburguesa Express"
                     description = "Extra queso, carne de res, lechuga, pepino tajado, papas fritas y salsa de tomate"
-                    link = "products/burguer-express"
+                    link = "products/express-burger"
                     price = "4.500"
                 />
                 <FeaturedProductItem
@@ -40,7 +40,7 @@ const FeaturedProducts = () => {
                     imgAlt = "Hamburguesa QuickBite"  
                     name = "Hamburguesa QuickBite"
                     description = "Queso, pepino y tomate tajado, carne de res y lechuga doble"
-                    link = "products/burguer-quickbite"
+                    link = "products/quickbite-burger"
                     price = "5.600"
                 />
                 <FeaturedProductItem
@@ -48,7 +48,7 @@ const FeaturedProducts = () => {
                     imgAlt = "Hamburguesa Big Flavor"  
                     name = "Hamburguesa Big Flavor"
                     description = "Queso, pepino y tomate tajado, lechuga doble, carne de res y aros de cebolla"
-                    link = "products/burguer-big-flavor"
+                    link = "products/big-flavor-burger"
                     price = "6.500"
                 />
                 <FeaturedProductItem
@@ -56,7 +56,7 @@ const FeaturedProducts = () => {
                     imgAlt = "Hamburguesa Big Flame"  
                     name = "Hamburguesa Big Flame"
                     description = "Doble queso, carne de res, pepino y tomate tajado, tocineta doble y lechuga doble"
-                    link = "products/burguer-big-flame"
+                    link = "products/big-flame-burger"
                     price = "8.000"
                 />
             </div>

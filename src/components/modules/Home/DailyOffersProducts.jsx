@@ -6,16 +6,16 @@ import { DailyOfferItem } from "./DailyOfferItem";
 
 // Imágenes - Iconos
     // Oferta del día 1
-    import DailyOffer1 from "../../../assets/img/modules/Home/dailyOffers/dailyOffer1.jpg";
+    import DailyOffer1 from "../../../assets/img/modules/Home/dailyOffers/webp/dailyOffer1.webp";
 
     // Oferta del día 2
-    import DailyOffer2 from "../../../assets/img/modules/Home/dailyOffers/dailyOffer2.jpeg";
+    import DailyOffer2 from "../../../assets/img/modules/Home/dailyOffers/webp/dailyOffer2.webp";
 
     // Oferta del día 3
-    import DailyOffer3 from "../../../assets/img/modules/Home/dailyOffers/dailyOffer3.jpeg";
+    import DailyOffer3 from "../../../assets/img/modules/Home/dailyOffers/webp/dailyOffer3.webp";
 
     // Oferta del día 4
-    import DailyOffer4 from "../../../assets/img/modules/Home/dailyOffers/dailyOffer4.jpeg";
+    import DailyOffer4 from "../../../assets/img/modules/Home/dailyOffers/webp/dailyOffer4.webp";
 
 const DailyOffers = () => {
     return(

@@ -6,7 +6,7 @@ const DailyOfferItem = (props) => {
         <div className="cont-prod">
             <div className="img-prod">
                 <Link to={props.link}>
-                    <img src={props.imgSrc} alt={props.imgAlt} />
+                    <img src={props.imgSrc} alt={props.imgAlt} loading="lazy" />
                 </Link>
             </div>
             <div className="info-cont-prod">

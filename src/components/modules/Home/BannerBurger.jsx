@@ -12,8 +12,8 @@ import React, { Suspense } from "react";
 // Componente de Modelo de Hamburguesa
 import { BurgerModel } from "./BurgerModel";
 
-import CocaColaImage from "../../../assets/img/modules/Home/coca-cola.png";
-import FrenchFriesImage from "../../../assets/img/modules/Home/french-fries-mc-donals.png";
+import CocaColaImage from "../../../assets/img/modules/Home/coca-cola.webp";
+import FrenchFriesImage from "../../../assets/img/modules/Home/french-fries-mc-donals.webp";
 
 const BannerBurger = () => {
     // Define los límites de rotación
@@ -64,11 +64,11 @@ const BannerBurger = () => {
                             <h2>Incluye: </h2>
                             <div className="cont-elements-include">
                                 <div className="cont-element-include">
-                                    <img src={CocaColaImage} alt="" />
+                                    <img src={CocaColaImage} alt="" loading="lazy" />
                                     <p>Coca Cola en lata 330 ml</p>
                                 </div>
                                 <div className="cont-element-include cont-include-paragraph-btm">
-                                    <img src={FrenchFriesImage} alt="" />
+                                    <img src={FrenchFriesImage} alt="" loading="lazy" />
                                     <p>Papas fritas 115 g</p>
                                 </div>
                             </div>

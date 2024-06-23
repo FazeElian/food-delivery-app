@@ -3,7 +3,7 @@ import "../../../assets/css/views/modules/Home/BannerOrderNow.css";
 
 // Imágenes - Iconos
     // Delivery Service
-    import DeliveryServiceImage from "../../../assets/img/modules/Home/delivery-service.png";
+    import DeliveryServiceImage from "../../../assets/img/modules/Home/delivery-service.webp";
 
 const BannerOrderNow = () => {
     return(
@@ -16,7 +16,7 @@ const BannerOrderNow = () => {
                 </button>
             </div>
             <div className="cont-img-delivery">
-                <img src={DeliveryServiceImage} alt="" />
+                <img src={DeliveryServiceImage} alt="" loading="lazy" />
             </div>
         </div>
     )
