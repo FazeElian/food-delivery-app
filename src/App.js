@@ -21,6 +21,9 @@ import "./assets/css/general-styles.css";
   // Productos
   const ProductsView = lazy(() => import("./views/modules/Products/ProductsView.jsx"));
 
+  // Producto - Con Parámetros de URL
+  const ProductDetail = lazy(() => import("./views/modules/Products/ProductDetail.jsx"));
+
   // Categorías de Productos
   const CategoriesView = lazy(() => import("./views/modules/Categories/CategoriesView.jsx"));
 
@@ -60,10 +63,20 @@ function App() {
 
           {/* Ruta Productos */}
           <Route 
-            path="/products/*" 
+            path="/products" 
             element={
               <Suspense fallback={<Loading />}>
                 <ProductsView />
+              </Suspense>
+            } 
+          /> 
+
+          {/* Ruta Producto - Params */}
+          <Route 
+            path="/products/:slug" 
+            element={
+              <Suspense fallback={<Loading />}>
+                <ProductDetail />
               </Suspense>
             } 
           /> 

@@ -13,12 +13,12 @@ const ProductsGallery = () => {
             {ProductsList.map (product => (
                 <div className="cont-prod--gallery" key={product.id}>
                     <div className="img-prod--gallery">
-                        <Link to={product.link}>
+                        <Link to={`/products/${product.slug}`}>
                             <img src={product.imgSrc} alt={product.name} />
                         </Link>
                     </div>
                     <div className="info-cont-prod--gallery">
-                        <Link to={product.link}>
+                        <Link to={`/products/${product.slug}`}>
                             <h2>{product.name}</h2>
                         </Link>
                         <p><b>Incluye: </b>{product.description} </p>
