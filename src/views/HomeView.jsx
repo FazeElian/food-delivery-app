@@ -14,6 +14,9 @@
     // Banner Black Friday
     import { BannerOrderNow } from "../components/modules/Home/BannerOrderNow";
 
+    // Footer - Pie de Página
+    import { Footer } from "../components/Footer";
+
 // Hooks
     // Título de Vista
     import { useDocumentTitle } from "../hooks/useDocumentTitle";
@@ -39,6 +42,9 @@ const HomeView = () => {
 
             {/* Componente: BannerOrderNow */}
             <BannerOrderNow />
+
+            {/* Componente: Footer - Pie de Página */}
+            <Footer />
         </>
     )
 }
